@@ -1,0 +1,34 @@
+<h1>Glimpse</h1>
+
+<h2>Good</h2>
+
+<p>Make a <em>good</em> request - this should work:</p>
+
+<div style="color: red" *ngIf="!goodSending && goodError">
+  {{ goodError | json }}
+</div>
+
+<div style="color: green" *ngIf="!goodSending && goodResponse">
+  {{ goodResponse | json }}
+</div>
+
+<div style="color: gray" *ngIf="goodSending">Loading...</div>
+
+<button type="button" (click)="goodRequest()">Send good request</button>
+
+
+<h2>Bad</h2>
+
+<p>Make a <em>bad</em> request - this should fail:</p>
+
+<div style="color: red" *ngIf="!badSending && badError">
+  {{ badError | json }}
+</div>
+
+<div style="color: green" *ngIf="!badSending && badResponse">
+  {{ badResponse | json }}
+</div>
+
+<div style="color: gray" *ngIf="badSending">Loading...</div>
+
+<button type="button" (click)="badRequest()">Send bad request</button>

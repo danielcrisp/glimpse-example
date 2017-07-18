@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Client</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <script src="http://localhost:3000/glimpse/hud/main.js"
+        id="__glimpse_hud"
+        data-client-template="http://localhost:3000/glimpse/client/requests/{requestId}?baseUrl=/glimpse/client{&follow,metadataUri}"
+        data-context-template="http://localhost:3000/glimpse/context/?contextId={contextId}{&types}"
+        data-metadata-template="http://localhost:3000/glimpse/metadata/">
+    </script>
+
+    <script src="http://localhost:3000/glimpse/agent/agent.js"
+        id="__glimpse_browser_agent"
+        data-message-ingress-template="http://localhost:3000/glimpse/message-ingress/">
+    </script>
+</head>
+<body>
+  <app-root></app-root>
+</body>
+</html>
