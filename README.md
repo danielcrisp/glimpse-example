@@ -22,7 +22,7 @@ There are three endpoints:
  - http://localhost:3000/good - [ANY] - responds with a very simple JSON body 
  - http://localhost:3000/bad - [ANY] - responds with a HUGE (~400 KB) JSON body
 
-### Angular App
+### Angular App
 
     $ cd client
     $ npm install
